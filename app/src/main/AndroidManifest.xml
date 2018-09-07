@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="op27no2.lift">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".UpdateService"></service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="op27no2.lift.CalorieGraph"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.graph" >
+                </action>
+                <action android:name="android.intent.action.time" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity android:name="op27no2.lift.Settings"
+            android:theme="@style/AppTheme"
+            android:parentActivityName="op27no2.lift.CalorieGraph" >
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="op27no2.lift.CalorieGraph" />
+        </activity>
+
+
+        <receiver
+            android:icon="@drawable/ic_icons_03"
+            android:label="MiniCal Widget"
+            android:name="op27no2.lift.MyWidgetProviderX" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <receiver
+            android:icon="@drawable/ic_icons_03"
+            android:label="MiniCal Widget"
+            android:name="op27no2.lift.MyBigWidgetProviderX" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/bigwidget_info" />
+        </receiver>
+
+        <receiver
+            android:name="op27no2.lift.MyWidgetIntentReceiverX"
+            android:label="widgetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.CHANGE_PICTURE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.CHANGE_PICTURE2" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.CHANGE_PICTURE3" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.CHANGE_PICTURE4" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.NEW_ACTIVITY" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <receiver
+            android:name="op27no2.lift.MyBigWidgetIntentReceiverX"
+            android:label="bigwidgetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.bCHANGE_PICTUREX" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.bCHANGE_PICTURE2X" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.bCHANGE_PICTURE3X" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.bCHANGE_PICTURE4X" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pl.looksok.intent.action.bNEW_ACTIVITYX" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity android:name="Instructions"
+            android:parentActivityName="op27no2.lift.CalorieGraph" >
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="op27no2.lift.CalorieGraph" />
+        </activity>
+
+
+
+
+    </application>
+
+
+
+
+</manifest>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ALift Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_references">Scientific Literature</string>
+    <string name="action_info">Instructions</string>
+    <string name="action_about">About</string>
+    <string name="action_report">Provide Feedback</string>
+    <string name="feedbackbutton">Email Feedback</string>
+    <string name="emailbutton">Please give me the opportunity to address any shortcomins using the links above, then proceed to rate my app using the link below! </string>
+    <string name="pleaserate">Please Rate This App! </string>
+    <string name="pleaserate2">(please give feedback to allow me to address concerns prior to poor ratings! Thanks!) </string>
+    
+    <string name="about1">IronClock lifting timer allows you to start a timer without having to take your phone out of your pocket. It is designed to set rest timers for weight training, but has many potential fitness applications </string>
+    <string name="about2">Start by Activating a timer on the (my timers) page. This primes the accelerometer detection. Once activated, a timer will start when you shake the phone 3 times in a row, and stop if you shake it 5 times. Sensitivity is changed with the +/- buttons on the timer screen. # of taps and other tweaks can be changed in the settings to get you a signal that works well.</string>
+    <string name="about3">Taps are activated in the z axis, normal to the plane of the screen (front to back). There is a setting which lets you use a tap signal x axis (left to right), with the same settings as the main signal, to send a "next song" command to your media player</string>
+    <string name="about4">After changing settings, you must deactivate then reactivate any timers before the changes take effect</string>
+    <string name="about5">Developed by: Joshua Crist</string>
+    <string name="about6">Version 1.0</string>
+    <string name="about7">Copyright 2014.</string>
+    <string name="about8">Background images credited to the following creative commons Flickr users:</string>
+    <string name="about9">Joshua Crist is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="prompt1">1 minute</string>
+    <string name="prompt2">30 seconds</string>
+    <string name="prompt3">0 minutes</string>
+    <string name="prompt4">15 seconds</string>
+    <string name="TitleBar">IronClock Lifting Timer</string>
+    <string name="vibrate">Vibrate On Timer Finish?</string>
+    <string name="dialog">Timer Name</string>    
+    <string name="cancel">Cancel</string>    
+    <string name="save">Save</string>    
+    <string name="savetimer">Save Timer</string>    
+    <string name="market1">Amazon = Cheap + Fast</string>
+    <string name="market2">Please support this app and do all of your fitness shopping on Amazon</string> 
+      
+    <string-array name="amazonlist">
+        <item >Underarmour</item>
+        <item >Power Cage</item>
+        <item >Running Gear</item>
+        <item >Weight Chains</item>
+        <item >Body Building</item>
+        <item >Powerblock</item>
+        <item >Concept 2</item>
+        <item >Monitor</item>
+        <item >Power Cage</item>
+        <item >Running Gear</item>
+        <item >Weight Chains</item>
+        <item >Body Building</item>
+        <item >Powerblock</item>
+        <item >Concept 2</item>
+    </string-array>
+    <string-array name="amazontitles">
+        <item >Underarmour Gear</item>
+        <item >Power Cage</item>
+        <item >Running Gear</item>
+        <item >Weight Chains</item> 
+        <item >Body Building</item>
+        <item >Power Block Dumbells</item>
+        <item >Concept 2 Rowing</item>
+        <item >Heart Rate Monitors</item>
+        <item >Power Cage</item>
+        <item >Running Gear</item>
+        <item >Weight Chains</item> 
+        <item >Body Building</item>
+        <item >Power Block Dumbells</item>
+        <item >Concept 2 Rowing</item>
+    </string-array>
+    <string-array name="array1">
+        <item >Simple Rest Timer</item>
+        <item >Custom Intervals</item>
+        <item >Infinite TTS Count Up</item>
+    </string-array>
+        <string-array name="tab_titles">
+        <item >My Timers</item>
+        <item >Timer</item>
+        <item >Create</item>
+        <item >Market</item>
+    </string-array>
+    
+    <color name="gray">#2e2e2e</color>
+    <color name="darkgray">#696969</color>
+    <color name="black">#000000</color>
+    <color name="red">#d90000</color>
+    <color name="darkblue">#002126</color>					
+    <color name="hololightblue">#33b5e5</color>					
+    <color name="holodarkblue">#0099cc</color>
+    <color name="holobrightblue">#00ddff</color>
+    <color name="holored">#FF1600</color>
+    <color name="midred">#A61700</color>
+    <color name="darkred">#420900</color>
+    <color name="green">#00ff00</color>
+    <color name="cardgrey">#ff999999</color>
+    <color name="cardshadow">#8c666666</color>
+    <color name="cardwhite">#ffffff</color>
+    
+<string name="slider_title">Tap Sensitivity</string>
+<string-array name="slider_summaries">
+    <!-- You can define as many summaries as you'd like -->
+    <!-- The active summary will reflect the preference's current value -->
+    <item>Low</item> <!-- 0.00 to 0.25 -->
+    <item>Medium</item>   <!-- 0.25 to 0.50 -->
+    <item>High</item>     <!-- 0.50 to 0.75 -->
+
+</string-array>
+<item name="slider_default" format="float" type="string">0.5</item>
+<string name="slider_message">A higher value means you will have to tap harder</string>
+<string name="tap_settings_title">Settings</string>
+<string name="audio_settings_title">Audio Settings</string>
+<string name="app_settings_title">Application Settings</string>
+
+
+<string name="volume_title">Volume</string>
+<string-array name="volume_summaries">
+    <!-- You can define as many summaries as you'd like -->
+    <!-- The active summary will reflect the preference's current value -->
+    <item>Low</item> <!-- 0.00 to 0.25 -->
+    <item>Medium</item>   <!-- 0.25 to 0.50 -->
+    <item>High</item>     <!-- 0.50 to 0.75 -->
+</string-array>
+<item name="volume_default" format="float" type="string">0.5</item>
+<string name="volume_message">Sets Volume of Timer Ticks and Alerts</string>
+
+<string name="tap_title">Base Calories</string>
+<string name="tapdialog_title">Weekly Reset Day</string>
+<string name="tapnum_summary">Enter your base calories (BMR or TDEE, depending on how you would like to track)</string>
+
+<string-array name="tap_array">
+    <item>Sunday</item> 
+    <item>Monday</item> 
+    <item>Tuesday</item>  
+    <item>Wednesday</item>
+    <item>Thursday</item>
+    <item>Friday</item>
+    <item>Saturday</item>
+</string-array>
+<string-array name="tap_array_values" format="float">
+    <item>1300</item> 
+    <item>1400</item> 
+    <item>1500</item> 
+    <item>1604</item>
+    <item>1700</item> 
+    <item>1800</item> 
+    <item>1900</item> 
+    <item>2000</item> 
+    <item>2000</item>  
+    <item>2000</item>  
+    <item>2000</item>  
+    <item>2000</item>  
+    <item>2000</item>  
+  
+</string-array>
+<item name="tap_default" format="float" type="string">3</item>
+
+<string name="tap2_title">Weekly Reset Day</string>
+<string name="tap2dialog_title">Taps to Stop</string>
+<string-array name="tap2_array">
+      <item>Sunday</item> 
+    <item>Monday</item> 
+    <item>Tuesday</item>  
+    <item>Wednesday</item>
+    <item>Thursday</item>
+    <item>Friday</item>
+    <item>Saturday</item>
+</string-array>
+<string-array name="tap2_array_values" format="float">
+    <item>1</item>
+    <item>2</item> 
+    <item>3</item> 
+    <item>4</item>
+    <item>5</item> 
+    <item>6</item> 
+    <item>7</item> 
+</string-array>
+<item name="tap2_default" format="float" type="string">5</item>
+
+<string name="timeout_title">Pounds - Kilograms</string>
+<string name="timeoutdialog_title">Pounds - Kilograms</string>
+<string-array name="timeout_array">
+    <item>Pounds</item>
+    <item>Kilograms</item> 
+</string-array>
+<string-array name="timeout_array_values" format="float">
+    <item>Pounds</item> 
+    <item>Kilograms</item>    
+</string-array>
+<item name="timeout_default" format="string" type="string">Pounds</item>
+
+<string name="vib_title">Large Adjustment Increment</string>
+<item name="vib_default" format="float" type="string">100</item>
+
+<string name="sound_title">Small Adjustment Increment</string>
+<item name="sound_default" format="float" type="string">10</item>
+
+
+<string name="back_title">Background Image</string>
+<string name="backdialog_title">Select Background Image</string>
+<string-array name="back_array">
+    <item>Fit Body</item> 
+    <item>Weightroom</item>  
+    <item>Lego Dark Side Weightroom?</item>
+    <item>Running Trail</item>
+    <item>Crossfit Gym</item> 
+    <item>Beach</item>
+</string-array>
+<string-array name="back_array_values" format="float">
+    <item>1</item> 
+    <item>2</item> 
+    <item>3</item> 
+    <item>4</item>
+    <item>5</item> 
+    <item>6</item>    
+</string-array>
+<item name="back_default" format="float" type="string">2</item>
+
+<string name="switch_title">Play Sound on Tap</string>
+<string name="switch_summary">Turn on to activate sound on tap detection</string>
+<string name="vibrate_title">Vibrate Only Mode</string>
+<string name="vibrate_summary">For Simple Timer mode: No Audio and Double Length Vibrate Signals for Use Without Headphones</string>
+<string name="notification_title">Display Notification</string>
+<string name="notification_summary">Displays notification when a timer is active for easy deactivation access</string>
+<string name="media_title">X-Axis Media Control</string>
+<string name="media_summary">The same tap signal in the X-axis will send a next-song command to your media player</string>
+
+
+</resources>
+
+

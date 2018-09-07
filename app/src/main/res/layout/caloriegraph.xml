@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/market"
+    android:layout_height="match_parent"
+    android:background="@drawable/cross"
+    tools:context=".MainActivity" >
+    
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:alpha="0.88"
+    android:background="@drawable/linback1" >
+    
+
+
+	   <LinearLayout
+	   android:layout_margin="10dp"
+	   android:orientation="vertical"
+	   android:layout_width="fill_parent"
+	   android:layout_height="300dip"
+	   android:id="@+id/graph1" >
+       
+	   </LinearLayout>
+	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+     >
+	  	  <Button
+	      android:layout_margin="4dp"
+		  android:id="@+id/left"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:text="Start" 
+		  android:textStyle="bold"
+		  android:textColor="@color/holored" 
+		  android:textSize="15sp"/>
+	   <Button
+	      android:layout_margin="4dp"
+		  android:id="@+id/zoomout"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:text="Out" 
+		  android:textStyle="bold"
+		  android:textColor="@color/holored" 
+		  android:textSize="15sp" />
+	  	 
+	  	 <Button
+	      android:layout_margin="4dp"
+		  android:id="@+id/zoomend"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:text="End" 
+		  android:textStyle="bold"
+		  android:textColor="@color/holored" 
+		  android:textSize="15sp"/>
+
+	  	 <Button
+	      android:layout_margin="4dp"
+		  android:id="@+id/yfit"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:text="Yfit" 
+		  android:textStyle="bold"
+		  android:textColor="@color/holored" 
+		  android:textSize="15sp"/>
+	  	 
+	  	 </LinearLayout>
+	  	 
+	</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

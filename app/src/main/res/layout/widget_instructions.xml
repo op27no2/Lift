@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    >
+<RelativeLayout
+    android:id="@+id/widgetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/linback2"
+    android:gravity="center_horizontal"
+     >
+     
+      <Button
+	  android:layout_width="33dp"
+	  android:layout_height="33dp"
+	  android:text="+" 
+	  android:textColor="@color/green" 
+	  android:textStyle="bold"
+	  android:textSize="16sp"
+	  android:background="@drawable/linback2"
+	  android:layout_alignParentTop="true"
+	  android:layout_alignParentLeft="true"
+	  />
+      <Button
+	  android:layout_width="33dp"
+	  android:layout_height="33dp"
+	  android:text="+" 
+	  android:background="@drawable/linback2"
+	  android:textColor="@color/green" 
+	  android:textSize="11sp"
+	  android:layout_alignParentBottom="true"
+	  android:layout_alignParentLeft="true"/>
+   	  
+   	  <Button
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:text="" 
+	  android:alpha="0.4"
+	  android:layout_below="@id/plus"
+	  android:layout_above="@+id/minussmall"
+	  />
+   
+		<Button
+		  android:layout_width="33dp"
+		  android:layout_height="33dp"
+		  android:text="-" 
+		  	  android:background="@drawable/linback2"
+		  android:textStyle="bold"
+		  android:layout_alignParentTop="true"
+		  android:layout_alignParentRight="true"
+		  android:textColor="@color/holored" 
+		  android:textSize="17sp"
+		  />
+		  <Button
+		  android:layout_width="33dp"
+		  android:layout_height="33dp"
+		  	  android:background="@drawable/linback2"
+		  android:text="-" 
+		  android:layout_alignParentBottom="true"
+		  android:layout_alignParentRight="true"
+		  android:textColor="@color/holored" 
+		  android:textSize="11sp"
+		  />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+     >
+      <TextView
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	 	android:layout_gravity="center"
+        android:textColor="@color/holored" 
+        android:text="-2000" 
+        android:textSize="15dp">
+        </TextView>
+	<TextView
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	 	android:layout_gravity="center"
+        android:textColor="@color/holored" 
+        android:text="-2000" 
+        android:textSize="15dp">
+        
+    </TextView>
+</LinearLayout>
+</FrameLayout>
